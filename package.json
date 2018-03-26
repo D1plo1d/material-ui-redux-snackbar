@@ -1,0 +1,41 @@
+{
+  "name": "material-ui-redux-snackbar",
+  "version": "1.0.0",
+  "description": "A snackbar for reactjs, using the redux state container and material-ui",
+  "main": "index.js",
+  "dependencies": {
+    "material-ui": "^0.20.0",
+    "react": "^16.2.0",
+    "reactjs": "^1.0.0",
+    "redux": "^3.7.2"
+  },
+  "peerDependencies": {
+    "material-ui": "*",
+    "react": "*",
+    "react-redux": "*",
+    "redux": "*"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/klamoree/material-ui-redux-snackbar.git"
+  },
+  "keywords": [
+    "redux",
+    "snackbar",
+    "react",
+    "redux snackbar",
+    "material snackbar",
+    "redux material snackbar"
+  ],
+  "author": "klamoree",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/klamoree/material-ui-redux-snackbar/issues"
+  },
+  "homepage": "https://github.com/klamoree/material-ui-redux-snackbar#readme"
+}
