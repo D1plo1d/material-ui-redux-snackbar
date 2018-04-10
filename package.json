@@ -2,12 +2,20 @@
   "name": "material-ui-redux-snackbar",
   "version": "1.0.0",
   "description": "A snackbar for reactjs, using the redux state container and material-ui",
-  "main": "index.js",
+  "browser": "./dist/index.js",
+  "main": "./dist/index.js",
+  "module": "./src/index.js",
+  "jsnext:main": "./src/index.js",
+  "author": "klamoree",
+  "license": "MIT",
   "dependencies": {
+    "eslint": "^4.19.1",
     "material-ui": "^0.20.0",
     "react": "^16.2.0",
     "reactjs": "^1.0.0",
-    "redux": "^3.7.2"
+    "redux": "^3.7.2",
+    "webpack": "^4.2.0",
+    "webpack-cli": "^2.0.13"
   },
   "peerDependencies": {
     "material-ui": "*",
@@ -17,7 +25,11 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm run build:commonjs & npm run build:umd",
+    "build:commonjs": "mkdir -p lib && babel ./src -d lib",
+    "build:umd": "webpack dist/ReduxSnackbar.js",
+    "lint": "eslint examples src test",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -31,8 +43,6 @@
     "material snackbar",
     "redux material snackbar"
   ],
-  "author": "klamoree",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/klamoree/material-ui-redux-snackbar/issues"
   },

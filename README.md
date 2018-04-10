@@ -11,7 +11,7 @@ material-ui
 
 Using npm:
 
-`npm install --save react-redux-snackbar`
+`npm install --save material-ui-redux-snackbar`
 
 ### Implementation
 
@@ -33,7 +33,7 @@ const store = createStore(reducer);
 
 ```javascript
 import { Provider }  from 'react-redux';
-import { Snackbar } from 'react-redux-snackbar';
+import { ReduxSnackbar } from 'material-ui-redux-snackbar';
 
 <Provider store={store}>
 	<ReduxSnackbar />
@@ -43,7 +43,7 @@ import { Snackbar } from 'react-redux-snackbar';
 3) Then use it by dispatching the redux-actions, anywhere in your app
 
 ```javascript
-import { displaySnackbarMessage } from 'react-redux-snackbar';
+import { displaySnackbarMessage } from 'material-ui-redux-snackbar';
 
 dispatch(displaySnackbarMessage('myUniqueId'));
 
